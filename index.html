@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AR Esportes | Judô & Treinos</title>
+    <meta
+      name="description"
+      content="Academia AR Esportes: Judô e atividades esportivas com disciplina, segurança e evolução."
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Italiana&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Loading overlay -->
+    <div id="loadingOverlay" aria-label="Carregando">
+      <div class="loading-shell">
+        <div class="loading-top">
+          <div class="loading-brand">
+            <div class="loading-logo" aria-hidden="true">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div>
+              <strong>AR Esportes</strong>
+              <div class="loading-hint">Preparando o seu próximo nível…</div>
+            </div>
+          </div>
+          <div aria-hidden="true" style="color:rgba(217,217,217,.9); font-size:13px;">
+            Ponta Grossa - PR
+          </div>
+        </div>
+        <div class="loading-bar" aria-hidden="true">
+          <span></span>
+        </div>
+        <div class="loading-hint">Judô com disciplina, respeito e evolução.</div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <nav>
+          <a class="logo" href="#home" aria-label="Ir para o início">
+            <img src="imgs/logo.png" alt="Logo do AR Esportes" />
+            <div class="logo-text">
+              <strong>AR Esportes</strong>
+              <span>Judô • Esportes • Evolução</span>
+            </div>
+          </a>
+
+          <button
+            class="burger"
+            type="button"
+            aria-label="Abrir menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            id="burger"
+          >
+            <span></span>
+          </button>
+
+          <ul class="nav-links" id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#differentials">Diferenciais</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#schedule">Horários</a></li>
+            <li><a href="#testimonials">Depoimentos</a></li>
+            <li><a href="#location">Localização</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="home-section">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="container hero">
+          <div class="hero-copy">
+            <div class="badge reveal" data-reveal>
+              <i aria-hidden="true"></i>
+              <span>Treino com disciplina, técnica e segurança</span>
+            </div>
+
+            <h1 class="reveal" data-reveal>Disciplina. Respeito. Evolução.</h1>
+            <p class="reveal" data-reveal>
+              Na AR Esportes, o judô vai além do tatame. Formamos atletas fortes dentro e fora das competições.
+            </p>
+
+            <div class="cta-row reveal" data-reveal>
+              <a class="btn primary btn-glow" href="#location" aria-label="Agendar Aula Experimental">
+                Agendar Aula Experimental <span class="arrow">→</span>
+              </a>
+              <a class="btn" href="#about">Conheça a Academia</a>
+            </div>
+
+            <div class="hero-stats" aria-label="Estatísticas da academia" id="heroStats">
+              <div class="stat-card reveal" data-reveal>
+                <div class="stat-number" data-count="200">0</div>
+                <div class="stat-label">+200 alunos</div>
+              </div>
+              <div class="stat-card reveal" data-reveal>
+                <div class="stat-number" data-count="15">0</div>
+                <div class="stat-label">+15 anos de tradição</div>
+              </div>
+              <div class="stat-card reveal" data-reveal>
+                <div class="stat-number" data-count="30">0</div>
+                <div class="stat-label">campeões regionais</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Destaques">
+            <div class="hero-card-top">
+              <h3>Um treino completo</h3>
+              <p class="sub">Técnica • Condicionamento • Valores</p>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <strong>Disciplina</strong>
+                <span>rotina com propósito</span>
+              </div>
+              <div class="stat">
+                <strong>Respeito</strong>
+                <span>postura dentro e fora</span>
+              </div>
+              <div class="stat">
+                <strong>Evolução</strong>
+                <span>progresso mensurável</span>
+              </div>
+              <div class="stat">
+                <strong>Performance</strong>
+                <span>treino orientado ao jogo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+<section id="about" class="about-section">
+  <div class="container">
+
+    <div class="about-wrapper">
+
+      <!-- LADO ESQUERDO -->
+      <div class="about-intro reveal" data-reveal>
+
+        <span class="about-tag">
+          🥋 Sobre a AR Esportes
+        </span>
+
+        <h2>
+          Evolução dentro e fora do tatame
+        </h2>
+
+        <p>
+          Mais do que ensinar técnicas, buscamos desenvolver disciplina,
+          confiança e constância através do Judô.
+        </p>
+
+        <div class="about-highlight">
+
+          <div class="highlight-line"></div>
+
+          <div>
+            <strong>Treinos estruturados</strong>
+            <span>
+              Acompanhamento real da evolução de cada aluno.
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- LADO DIREITO -->
+      <div class="about-cards">
+
+        <article class="card reveal" data-reveal>
+
+          <div class="card-top">
+            <div class="icon">🥋</div>
+            <span>Fundamentos</span>
+          </div>
+
+          <h3>Técnica e base</h3>
+
+          <p>
+            Aprenda os fundamentos do Judô com progressão clara
+            e correções individuais.
+          </p>
+
+        </article>
+
+        <article class="card reveal" data-reveal>
+
+          <div class="card-top">
+            <div class="icon">🛡️</div>
+            <span>Proteção</span>
+          </div>
+
+          <h3>Segurança em primeiro lugar</h3>
+
+          <p>
+            Respeitamos o ritmo de cada aluno com orientação
+            correta e prática segura.
+          </p>
+
+        </article>
+
+        <article class="card reveal" data-reveal>
+
+          <div class="card-top">
+            <div class="icon">💪</div>
+            <span>Performance</span>
+          </div>
+
+          <h3>Condicionamento físico</h3>
+
+          <p>
+            Exercícios que fortalecem corpo e mente para melhorar
+            o desempenho no tatame.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+      <!-- JUDÔ / METODOLOGIA -->
+      <section id="judo" class="judo-section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Judô (como treinamos)</h2>
+            <p>
+              Nossos treinos são pensados para construir confiança e domínio técnico.
+              Você aprende a cair com segurança, evolui em pegadas e trabalha movimentos com controle.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <article class="card reveal" data-reveal>
+              <h3>Faixas e metas</h3>
+              <p>Treino progressivo com metas para você sentir evolução: base, técnica, aplicação e condicionamento.</p>
+            </article>
+            <article class="card reveal" data-reveal>
+              <h3>Valores do esporte</h3>
+              <p>Respeito, disciplina e superação. O Judô forma também fora do tatame.</p>
+            </article>
+          </div>
+
+          <div class="grid-3" style="margin-top:14px;">
+            <article class="card reveal" data-reveal>
+              <h3>Segurança</h3>
+              <p>Preparação e orientação contínua para reduzir risco e treinar com confiança.</p>
+            </article>
+            <article class="card reveal" data-reveal>
+              <h3>Foco</h3>
+              <p>Treinos com objetivos claros para acelerar sua aprendizagem.</p>
+            </article>
+            <article class="card reveal" data-reveal>
+              <h3>Comunidade</h3>
+              <p>Ambiente acolhedor: você treina, aprende e evolui com a turma.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLANOS (mantém seção existente para conteúdo) -->
+<section id="program" class="program-section">
+  <div class="container">
+
+    <div class="section-head" data-reveal>
+      <div>
+        <span class="about-tag">
+          <i class="ri-fire-fill"></i>
+          Planos de treino
+        </span>
+
+        <h2>Treine no seu ritmo.</h2>
+      </div>
+
+      <p>
+        Escolha o plano ideal para sua rotina e evolução dentro do Judô.
+        Desde os primeiros passos até preparação avançada para competição.
+      </p>
+    </div>
+
+    <div class="grid-3">
+
+      <!-- CARD 1 -->
+      <article class="card plan reveal" data-reveal>
+
+        <div class="card-top">
+          <span>INICIANTE</span>
+
+          <div class="icon">
+            <i class="ri-seedling-line"></i>
+          </div>
+        </div>
+
+        <h3>Comece com base forte</h3>
+
+        <p>
+          Ideal para quem está entrando no Judô e quer desenvolver técnica,
+          disciplina e condicionamento físico.
+        </p>
+
+        <div class="price">
+          <strong>R$ 99</strong>
+          <span>/mês</span>
+        </div>
+
+        <ul class="list">
+          <li>2x por semana</li>
+          <li>Fundamentos do Judô</li>
+          <li>Preparação física</li>
+          <li>Acompanhamento inicial</li>
+        </ul>
+
+        <a href="#contact" class="btn">
+          Começar agora
+        </a>
+
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="card plan reveal featured-plan" data-reveal>
+
+        <div class="plan-badge">
+          MAIS ESCOLHIDO
+        </div>
+
+        <div class="card-top">
+          <span>INTERMEDIÁRIO</span>
+
+          <div class="icon premium">
+            <i class="ri-sword-line"></i>
+          </div>
+        </div>
+
+        <h3>Evolução constante</h3>
+
+        <p>
+          Para alunos que desejam elevar o nível técnico,
+          intensidade e controle durante os treinos.
+        </p>
+
+        <div class="price">
+          <strong>R$ 149</strong>
+          <span>/mês</span>
+        </div>
+
+        <ul class="list">
+          <li>3x por semana</li>
+          <li>Técnica + aplicações</li>
+          <li>Ajustes individuais</li>
+          <li>Treino de resistência</li>
+        </ul>
+
+        <a href="#contact" class="btn primary btn-glow">
+          Quero esse plano
+        </a>
+
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="card plan reveal" data-reveal>
+
+        <div class="card-top">
+          <span>AVANÇADO</span>
+
+          <div class="icon">
+            <i class="ri-trophy-line"></i>
+          </div>
+        </div>
+
+        <h3>Alta performance</h3>
+
+        <p>
+          Treinos intensos focados em estratégia,
+          competição e evolução física avançada.
+        </p>
+
+        <div class="price">
+          <strong>R$ 199</strong>
+          <span>/mês</span>
+        </div>
+
+        <ul class="list">
+          <li>4x por semana</li>
+          <li>Treino tático</li>
+          <li>Simulações de combate</li>
+          <li>Preparação competitiva</li>
+        </ul>
+
+        <a href="#contact" class="btn">
+          Evoluir agora
+        </a>
+
+      </article>
+
+    </div>
+
+    <!-- CTA FINAL -->
+    <div class="program-cta card reveal" data-reveal>
+
+      <div class="program-cta-content">
+
+        <span class="mini-tag">
+          DÚVIDAS?
+        </span>
+
+        <h3>Não sabe qual plano escolher?</h3>
+
+        <p>
+          Nossa equipe pode indicar o plano ideal baseado
+          no seu nível, objetivos e disponibilidade.
+        </p>
+
+      </div>
+
+      <a class="btn primary btn-glow" href="#contact">
+        Falar com a equipe →
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+      <!-- PROFESSORES -->
+      <section id="coaches" class="coaches-section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Professores</h2>
+            <p>Profissionais que acompanham sua evolução no tatame. (Substitua os nomes e especialidades pelos do seu time.)</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card reveal" data-reveal>
+              <h3>Sensei • Nome</h3>
+              <p>Especialidade: fundamentos e progressão por metas.</p>
+            </article>
+            <article class="card reveal" data-reveal>
+              <h3>Professor(a) • Nome</h3>
+              <p>Especialidade: condicionamento e técnica aplicada.</p>
+            </article>
+            <article class="card reveal" data-reveal>
+              <h3>Professor(a) • Nome</h3>
+              <p>Especialidade: treino tático e controle.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIFERENCIAIS -->
+      <section id="differentials" class="differentials-section">
+        <div class="container">
+          <div class="section-head">
+            <h2>O que faz a AR Esportes ser diferente</h2>
+            <p>Treino estruturado, disciplina de verdade e evolução mensurável — do iniciante ao competitivo.</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card reveal" data-reveal>
+              <div class="icon premium" aria-hidden="true"><i class="fa-solid fa-user-graduate"></i></div>
+              <h3>Professores qualificados</h3>
+              <p>Acompanhamento técnico com foco em evolução segura e progressiva.</p>
+            </article>
+            <article class="card reveal" data-reveal>
+              <div class="icon premium" aria-hidden="true"><i class="fa-solid fa-people-group"></i></div>
+              <h3>Ambiente familiar</h3>
+              <p>Respeito, apoio e disciplina — dentro e fora do tatame.</p>
+            </article>
+            <article class="card reveal" data-reveal>
+              <div class="icon premium" aria-hidden="true"><i class="fa-solid fa-medal"></i></div>
+              <h3>Treino para competição</h3>
+              <p>Estratégia, ritmo de luta e preparação para performance real.</p>
+            </article>
+            <article class="card reveal" data-reveal>
+              <div class="icon premium" aria-hidden="true"><i class="fa-solid fa-child"></i></div>
+              <h3>Crianças, jovens e adultos</h3>
+              <p>Turmas adaptadas por faixa etária e objetivo — sem perder a qualidade.</p>
+            </article>
+            <article class="card reveal" data-reveal>
+              <div class="icon premium" aria-hidden="true"><i class="fa-solid fa-brain"></i></div>
+              <h3>Desenvolvimento físico e mental</h3>
+              <p>Controle, foco, confiança e condicionamento com propósito.</p>
+            </article>
+            <article class="card reveal" data-reveal>
+              <div class="icon premium" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></div>
+              <h3>Estrutura completa</h3>
+              <p>Um espaço pensado para treinar com segurança e evoluir com excelência.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERIA -->
+      <section id="gallery" class="gallery-section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Galeria</h2>
+            <p>Momentos do tatame: treino, evolução, competições e disciplina na prática.</p>
+          </div>
+
+          <div class="gallery-grid" aria-label="Galeria de treinos">
+            <figure class="gallery-item reveal" data-reveal>
+              <img src="imgs/gallery-1.jpg" alt="Atletas treinando no tatame" loading="lazy" />
+              <figcaption><span>Treino</span></figcaption>
+            </figure>
+            <figure class="gallery-item reveal" data-reveal>
+              <img src="imgs/gallery-2.jpg" alt="Momento de competição" loading="lazy" />
+              <figcaption><span>Competição</span></figcaption>
+            </figure>
+            <figure class="gallery-item reveal" data-reveal>
+              <img src="imgs/gallery-3.jpg" alt="Faixa e evolução" loading="lazy" />
+              <figcaption><span>Evolução</span></figcaption>
+            </figure>
+            <figure class="gallery-item reveal" data-reveal>
+              <img src="imgs/gallery-4.jpg" alt="Tatame e técnica" loading="lazy" />
+              <figcaption><span>Técnica</span></figcaption>
+            </figure>
+            <figure class="gallery-item reveal" data-reveal>
+              <img src="imgs/gallery-5.jpg" alt="Treinamento em equipe" loading="lazy" />
+              <figcaption><span>Comunidade</span></figcaption>
+            </figure>
+            <figure class="gallery-item reveal" data-reveal>
+              <img src="imgs/gallery-6.jpg" alt="Controle e foco" loading="lazy" />
+              <figcaption><span>Foco</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- HORÁRIOS -->
+      <section id="schedule" class="schedule-section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Horários</h2>
+            <p>Escolha sua turma e evolua com constância. (Ajuste os horários conforme sua grade real.)</p>
+          </div>
+
+          <div class="schedule-grid">
+            <article class="schedule-card reveal" data-reveal>
+              <div class="schedule-head">
+                <span class="pill">Infantil</span>
+                <i class="fa-solid fa-baby"></i>
+              </div>
+              <table>
+                <tbody>
+                  <tr><th>Seg</th><td>17:00</td></tr>
+                  <tr><th>Qua</th><td>17:00</td></tr>
+                  <tr><th>Sex</th><td>17:00</td></tr>
+                </tbody>
+              </table>
+            </article>
+
+            <article class="schedule-card reveal" data-reveal>
+              <div class="schedule-head">
+                <span class="pill">Juvenil</span>
+                <i class="fa-solid fa-person"></i>
+              </div>
+              <table>
+                <tbody>
+                  <tr><th>Ter</th><td>18:30</td></tr>
+                  <tr><th>Qui</th><td>18:30</td></tr>
+                  <tr><th>Sex</th><td>18:30</td></tr>
+                </tbody>
+              </table>
+            </article>
+
+            <article class="schedule-card reveal" data-reveal>
+              <div class="schedule-head">
+                <span class="pill pill-strong">Adulto</span>
+                <i class="fa-solid fa-dumbbell"></i>
+              </div>
+              <table>
+                <tbody>
+                  <tr><th>Seg</th><td>19:30</td></tr>
+                  <tr><th>Qua</th><td>19:30</td></tr>
+                  <tr><th>Qui</th><td>20:30</td></tr>
+                </tbody>
+              </table>
+            </article>
+
+            <article class="schedule-card reveal" data-reveal>
+              <div class="schedule-head">
+                <span class="pill pill-strong">Competição</span>
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <table>
+                <tbody>
+                  <tr><th>Ter</th><td>20:00</td></tr>
+                  <tr><th>Qui</th><td>19:00</td></tr>
+                  <tr><th>Sáb</th><td>09:00</td></tr>
+                </tbody>
+              </table>
+              <p class="schedule-note">A turma de competição é orientada para performance e evolução técnica avançada.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEPOIMENTOS -->
+      <section id="testimonials" class="testimonials-section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Depoimentos</h2>
+            <p>Resultados que vão além do tatame: disciplina, confiança e evolução pessoal.</p>
+          </div>
+
+          <div class="slider reveal" data-reveal>
+            <div class="slider-track" aria-live="polite">
+              <article class="slide active">
+                <div class="stars" aria-hidden="true">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="quote">“Meu filho ganhou confiança, respeito e disciplina. O treino é sério e ao mesmo tempo acolhedor.”</p>
+                <div class="person">
+                  <img src="imgs/testimonial-1.jpg" alt="Pai de aluno" loading="lazy" />
+                  <div>
+                    <strong>Mariana S.</strong>
+                    <span>mãe/pai • Infantil</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="slide">
+                <div class="stars" aria-hidden="true">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="quote">“A evolução técnica foi rápida. O ambiente é focado, organizado e com professores muito atenciosos.”</p>
+                <div class="person">
+                  <img src="imgs/testimonial-2.jpg" alt="Aluno" loading="lazy" />
+                  <div>
+                    <strong>Lucas R.</strong>
+                    <span>aluno • Adulto</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="slide">
+                <div class="stars" aria-hidden="true">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="quote">“Treino com foco em competição. A metodologia e a disciplina fazem diferença no desempenho.”</p>
+                <div class="person">
+                  <img src="imgs/testimonial-3.jpg" alt="Atleta" loading="lazy" />
+                  <div>
+                    <strong>Rafael T.</strong>
+                    <span>atleta • Competição</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="slider-controls">
+              <button class="icon-btn" type="button" aria-label="Depoimento anterior" data-slider-prev>
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+
+              <div class="dots" role="tablist" aria-label="Navegação de depoimentos">
+                <button class="dot active" type="button" aria-label="Slide 1" data-slider-dot="0"></button>
+                <button class="dot" type="button" aria-label="Slide 2" data-slider-dot="1"></button>
+                <button class="dot" type="button" aria-label="Slide 3" data-slider-dot="2"></button>
+              </div>
+
+              <button class="icon-btn" type="button" aria-label="Próximo depoimento" data-slider-next>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCALIZAÇÃO + CTA -->
+      <section id="location" class="location-section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Localização</h2>
+            <p>Ponta Grossa - PR. Venha conhecer o tatame e o padrão de treino da AR Esportes.</p>
+          </div>
+
+          <div class="location-grid">
+            <div class="location-card reveal" data-reveal>
+              <div class="location-meta">
+                <div class="meta-row">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                  <div>
+                    <strong>Endereço</strong>
+                    <span>Rua Exemplo, Nº 123 — Ponta Grossa - PR</span>
+                  </div>
+                </div>
+
+                <div class="meta-row">
+                  <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                  <div>
+                    <strong>Telefone</strong>
+                    <span>(42) 9XXXX-XXXX</span>
+                  </div>
+                </div>
+
+                <div class="quick-actions">
+                  <a
+                    class="btn primary"
+                    href="https://wa.me/5542998716842"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+                  </a>
+                  <a
+                    class="btn"
+                    href="https://www.instagram.com/aresportes_/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-instagram"></i> Seguir no Instagram
+                  </a>
+                  <a class="btn" href="#" data-scroll-to-map>
+                    <i class="fa-solid fa-route"></i> Como Chegar
+                  </a>
+                </div>
+
+                <div class="micro">
+                  <span>Atendimento e orientação para escolher sua melhor faixa.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="map-card reveal" data-reveal id="map">
+              <div class="map-frame" aria-label="Mapa">
+                <iframe
+                  title="Mapa - AR Esportes"
+                  loading="lazy"
+                  src="https://www.google.com/maps?q=Ponta%20Grossa%20PR&output=embed"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="cta-section">
+        <div class="cta-bg" aria-hidden="true"></div>
+        <div class="container cta-inner">
+          <div class="cta-content reveal" data-reveal>
+            <h2>Seu próximo nível começa agora.</h2>
+            <p>Venha treinar na AR Esportes e descubra o que o judô pode transformar na sua vida.</p>
+            <div class="cta-actions">
+              <a class="btn primary btn-glow" href="#location">Começar Agora</a>
+              <a class="btn" href="#schedule">Ver horários</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT / FOOTER CTA (âncora para o link existente do programa) -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="contact-footer">
+            <div class="contact-brand">
+              <strong>AR Esportes</strong>
+              <span>Disciplina, respeito e evolução.</span>
+            </div>
+              </a>
+            </div>
+          </div>
+      </section>
+    </main>
+
+<footer>
+  <div class="container footer-row">
+
+    <!-- LOGO -->
+    <div class="logo-footer">
+      
+
+      <img src="imgs/logo.png" alt="AR Esportes" />
+
+      <div>
+        © <span id="year"></span> • Judô & Treinos Esportivos
+      </div>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="social" aria-label="Redes sociais">
+
+      <a href="#" aria-label="Instagram" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="#" aria-label="WhatsApp" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <a href="#" aria-label="Facebook" title="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+
+    </div>
+
+  </div>
+</footer>
+
+    <script src="index.js"></script>
+
+    <script>
+      // Menu mobile (sem depender de libs)
+      (() => {
+        const burger = document.getElementById('burger');
+        const body = document.body;
+        const menu = document.getElementById('menu');
+        if (!burger || !menu) return;
+
+        const setExpanded = (expanded) => {
+          burger.setAttribute('aria-expanded', String(expanded));
+        };
+
+        burger.addEventListener('click', () => {
+          const open = body.classList.toggle('nav-open');
+          setExpanded(open);
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!body.classList.contains('nav-open')) return;
+          const clickedInside = menu.contains(e.target) || burger.contains(e.target);
+          if (!clickedInside) {
+            body.classList.remove('nav-open');
+            setExpanded(false);
+          }
+        });
+
+        const year = document.getElementById('year');
+        if (year) year.textContent = String(new Date().getFullYear());
+      })();
+    </script>
+  </body>
+</html>
+
