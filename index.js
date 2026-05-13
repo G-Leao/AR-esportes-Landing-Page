@@ -25,9 +25,13 @@
   onScroll();
 
   // Mobile menu (keep existing behavior, but close on link click)
-  const burger = $('#burger');
-  const body = document.body;
-  const menu = $('#menu');
+// Mobile menu
+const burger = $('#burger');
+const body = document.body;
+const menu = $('#menu');
+
+console.log('burger:', burger);
+console.log('menu:', menu);
   if (burger && menu) {
     burger.addEventListener('click', () => {
       const open = body.classList.toggle('nav-open');
@@ -50,6 +54,31 @@
       });
     });
   }
+
+  const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+
+  let current = '';
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 140;
+
+    if (scrollY >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
+  });
+
+});
 
   // Smooth scroll fallback (also update URL hash)
   $$('.nav-links a[href^="#"], a[href^="#"]').forEach((a) => {
